@@ -13,13 +13,7 @@ class HomeViewController: UIViewController {
     //MARK:- Properties
     
     let cell = "HomeCell"
-    var leagues = [League](){
-        didSet {
-            for i in leagues{
-                print(i.idLeague)
-            }
-        }
-    }
+    var leagues = [League]()
     
     //MARK:- IBOutlets
     
@@ -29,9 +23,9 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         setupTableView()
+        getLeagues()
     }
 }
-
 
 //MARK:- Private Functions
 
@@ -40,6 +34,18 @@ extension HomeViewController{
     private func setupTableView(){
         homeTableView.register(UINib(nibName: cell, bundle: nil), forCellReuseIdentifier: cell)
     }
+    
+    private func getLeagues(){
+        BaseAPI.shared.request(router: .getAllLeagues) { (result: Result<Leagues>) -> () in
+            switch result {
+            case .success(let data):
+                self.leagues.append(contentsOf: data.leagues!)
+                self.homeTableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }
 
 //MARK:- TableView Delegate and DataSource methods
@@ -47,11 +53,12 @@ extension HomeViewController{
 extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return  1
+        return leagues.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cell, for: indexPath) as! HomeCell
+        cell.league = leagues[indexPath.item]
         return cell
     }
     

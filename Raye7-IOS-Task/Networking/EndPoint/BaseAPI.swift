@@ -20,7 +20,7 @@ class BaseAPI {
         session = URLSession(configuration: config)
     }
     
-    func request<T: Decodable>(router: Router, completion: @escaping (Result<T>) -> (Void)) {
+    func request<T: Decodable>(router: Router, completion: @escaping (Result<T>) -> ()) {
         do {
             let task = try session.dataTask(with: router.request()) { (data, urlResponse, error) in
                 DispatchQueue.main.async {

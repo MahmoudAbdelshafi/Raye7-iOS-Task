@@ -10,11 +10,23 @@ import UIKit
 
 class HomeCell: UITableViewCell {
     
+    //MARK:- Properties
+    
+    var league:League?{
+        
+        didSet{
+            leagueLabel.text = league?.strLeague
+            sportLabel.text = league?.strSport
+            aternateLabel.text = league?.strLeagueAlternate
+            }
+        }
+    
+    
     //MARK:- IBOutlets
     
-    @IBOutlet weak var leagueLabel: UILabel!
-    @IBOutlet weak var sportLabel: UILabel!
-    @IBOutlet weak var aternateLabel: UILabel!
+    @IBOutlet private weak var leagueLabel: UILabel!
+    @IBOutlet private weak var sportLabel: UILabel!
+    @IBOutlet private weak var aternateLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
