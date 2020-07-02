@@ -64,10 +64,11 @@ extension HomeController: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
         let detailsController = storyboard?.instantiateViewController(withIdentifier: "DetailsController") as! DetailsController
-              // detailsController.userId = user.uid
-               navigationController?.pushViewController(detailsController, animated: true)
+        ///Passing the leagueID...
+        guard let safeLeagueid = leagues[indexPath.row].idLeague else { return }
+        detailsController.idLeague = safeLeagueid
+        navigationController?.pushViewController(detailsController, animated: true)
     }
     
 }

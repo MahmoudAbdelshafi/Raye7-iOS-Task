@@ -38,7 +38,7 @@ enum Router {
         case .getAllLeagues:
             return "all_leagues.php"
         case .getLeague(let idLeague):
-            return "lookupleague.php?id=4328\(idLeague)"
+            return "lookupleague.php?id=\(idLeague)"
         }
     }
     
