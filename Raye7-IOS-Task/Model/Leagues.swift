@@ -8,11 +8,16 @@
 
 import Foundation
 
-/// Leagues data model
+// MARK: - League
+struct Leagues: Codable {
+    let leagues: [League]?
+}
 
-struct Leagues{
-    let idLeague:Int
-    let strLeague:String
-    let strSport:String
-    let strLeagueAlternate:String
+// MARK: - League
+struct League: Codable {
+    let idLeague, idSoccerXML, idAPIfootball, strSport: String?
+    let strLeague, strLeagueAlternate, strDivision, idCup: String?
+    let strCurrentSeason, intFormedYear, dateFirstEvent, strGender: String?
+    let strCountry, strWebsite: String?
+    let strLogo: String?
 }

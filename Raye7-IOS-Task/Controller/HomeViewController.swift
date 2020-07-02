@@ -13,6 +13,13 @@ class HomeViewController: UIViewController {
     //MARK:- Properties
     
     let cell = "HomeCell"
+    var leagues = [League](){
+        didSet {
+            for i in leagues{
+                print(i.idLeague)
+            }
+        }
+    }
     
     //MARK:- IBOutlets
     
@@ -24,6 +31,7 @@ class HomeViewController: UIViewController {
         setupTableView()
     }
 }
+
 
 //MARK:- Private Functions
 
