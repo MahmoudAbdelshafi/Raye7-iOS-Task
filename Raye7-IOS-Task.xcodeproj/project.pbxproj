@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		394564CB24AD2082008D5B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564CA24AD2082008D5B93 /* AppDelegate.swift */; };
-		394564CF24AD2082008D5B93 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564CE24AD2082008D5B93 /* HomeViewController.swift */; };
+		394564CF24AD2082008D5B93 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564CE24AD2082008D5B93 /* HomeController.swift */; };
 		394564D224AD2082008D5B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394564D024AD2082008D5B93 /* Main.storyboard */; };
 		394564D424AD2088008D5B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 394564D324AD2088008D5B93 /* Assets.xcassets */; };
 		394564D724AD2088008D5B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394564D524AD2088008D5B93 /* LaunchScreen.storyboard */; };
@@ -18,12 +18,15 @@
 		394564F124AE2E2C008D5B93 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564F024AE2E2C008D5B93 /* Result.swift */; };
 		394564F324AE30E7008D5B93 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564F224AE30E7008D5B93 /* Router.swift */; };
 		394564F524AE31E1008D5B93 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564F424AE31E1008D5B93 /* BaseAPI.swift */; };
+		394564FB24AE83CA008D5B93 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564FA24AE83CA008D5B93 /* DetailsController.swift */; };
+		394564FF24AE893D008D5B93 /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564FD24AE893D008D5B93 /* DetailsCell.swift */; };
+		3945650024AE893E008D5B93 /* DetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 394564FE24AE893D008D5B93 /* DetailsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		394564C724AD2082008D5B93 /* Raye7-IOS-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raye7-IOS-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		394564CA24AD2082008D5B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		394564CE24AD2082008D5B93 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		394564CE24AD2082008D5B93 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		394564D124AD2082008D5B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		394564D324AD2088008D5B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		394564D624AD2088008D5B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +37,9 @@
 		394564F024AE2E2C008D5B93 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		394564F224AE30E7008D5B93 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		394564F424AE31E1008D5B93 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		394564FA24AE83CA008D5B93 /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
+		394564FD24AE893D008D5B93 /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		394564FE24AE893D008D5B93 /* DetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,8 @@
 		394564E124AD2326008D5B93 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				394564CE24AD2082008D5B93 /* HomeViewController.swift */,
+				394564CE24AD2082008D5B93 /* HomeController.swift */,
+				394564FA24AE83CA008D5B93 /* DetailsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -122,6 +129,7 @@
 		394564E324AD2636008D5B93 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				394564FC24AE890B008D5B93 /* DetailsCell */,
 				394564E824AD2663008D5B93 /* HomeCell */,
 			);
 			path = View;
@@ -152,6 +160,15 @@
 				394564F424AE31E1008D5B93 /* BaseAPI.swift */,
 			);
 			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		394564FC24AE890B008D5B93 /* DetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				394564FD24AE893D008D5B93 /* DetailsCell.swift */,
+				394564FE24AE893D008D5B93 /* DetailsCell.xib */,
+			);
+			path = DetailsCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +232,7 @@
 				394564D724AD2088008D5B93 /* LaunchScreen.storyboard in Resources */,
 				394564D424AD2088008D5B93 /* Assets.xcassets in Resources */,
 				394564EC24AD2695008D5B93 /* HomeCell.xib in Resources */,
+				3945650024AE893E008D5B93 /* DetailsCell.xib in Resources */,
 				394564D224AD2082008D5B93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,10 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394564FF24AE893D008D5B93 /* DetailsCell.swift in Sources */,
 				394564F124AE2E2C008D5B93 /* Result.swift in Sources */,
-				394564CF24AD2082008D5B93 /* HomeViewController.swift in Sources */,
+				394564CF24AD2082008D5B93 /* HomeController.swift in Sources */,
 				394564EB24AD2695008D5B93 /* HomeCell.swift in Sources */,
 				394564EE24AD2A6E008D5B93 /* Leagues.swift in Sources */,
+				394564FB24AE83CA008D5B93 /* DetailsController.swift in Sources */,
 				394564F324AE30E7008D5B93 /* Router.swift in Sources */,
 				394564CB24AD2082008D5B93 /* AppDelegate.swift in Sources */,
 				394564F524AE31E1008D5B93 /* BaseAPI.swift in Sources */,

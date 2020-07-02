@@ -9,14 +9,16 @@
 import Foundation
 
 // MARK: - League
-struct Leagues: Codable {
+
+struct Leagues: Decodable {
     let leagues: [League]?
 }
 
 // MARK: - League
-struct League: Codable {
+
+struct League: Decodable {
     let idLeague, idSoccerXML, idAPIfootball, strSport: String?
-    let strLeague, strLeagueAlternate, strDivision, idCup: String?
+    var strLeague, strLeagueAlternate, strDivision, idCup: String?
     let strCurrentSeason, intFormedYear, dateFirstEvent, strGender: String?
     let strCountry, strWebsite: String?
     let strLogo: String?

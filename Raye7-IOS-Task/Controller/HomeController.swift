@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeController: UIViewController {
     
     //MARK:- Properties
     
@@ -17,11 +17,12 @@ class HomeViewController: UIViewController {
     
     //MARK:- IBOutlets
     
-    @IBOutlet weak var homeTableView: UITableView!
+    @IBOutlet private weak var homeTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Leagues"
         setupTableView()
         getLeagues()
     }
@@ -29,7 +30,7 @@ class HomeViewController: UIViewController {
 
 //MARK:- Private Functions
 
-extension HomeViewController{
+extension HomeController{
     
     private func setupTableView(){
         homeTableView.register(UINib(nibName: cell, bundle: nil), forCellReuseIdentifier: cell)
@@ -50,7 +51,7 @@ extension HomeViewController{
 
 //MARK:- TableView Delegate and DataSource methods
 
-extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
+extension HomeController: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return leagues.count
@@ -62,5 +63,11 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        let detailsController = storyboard?.instantiateViewController(withIdentifier: "DetailsController") as! DetailsController
+              // detailsController.userId = user.uid
+               navigationController?.pushViewController(detailsController, animated: true)
+    }
     
 }
