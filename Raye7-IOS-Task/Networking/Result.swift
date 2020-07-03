@@ -15,7 +15,7 @@ enum Result<T> {
     case failure(error: Error)
 }
 
-/// Error Handling
+/// Error Handling Cases
 
 enum ErrorType:Error {
     case parseUrlFail

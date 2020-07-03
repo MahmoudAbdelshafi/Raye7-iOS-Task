@@ -16,11 +16,9 @@ class DetailsController: UIViewController {
     var idLeague = String()
     var league = [League]()
     
-    
-    
     //MARK:- IBOutlets
     
-    @IBOutlet private weak var logoImage: UIImageView!
+    @IBOutlet private weak var logoImage: CustomImageView!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var sportLabel: UILabel!
     @IBOutlet private weak var countryLabel: UILabel!
@@ -37,6 +35,7 @@ class DetailsController: UIViewController {
 }
 
 //MARK:- Private Functions
+
 extension DetailsController{
     
     private func getLeagueDetails(){
@@ -52,6 +51,8 @@ extension DetailsController{
     }
     
     private func handelLeagueData(_ league:League){
+        guard let imageUrl = league.strLogo else { return }
+        logoImage.loadImage(urlString:imageUrl)
         nameLabel.text = league.strLeague
         sportLabel.text = league.strSport
         countryLabel.text = league.strCountry

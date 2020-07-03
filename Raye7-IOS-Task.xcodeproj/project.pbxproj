@@ -19,6 +19,7 @@
 		394564F324AE30E7008D5B93 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564F224AE30E7008D5B93 /* Router.swift */; };
 		394564F524AE31E1008D5B93 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564F424AE31E1008D5B93 /* BaseAPI.swift */; };
 		394564FB24AE83CA008D5B93 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564FA24AE83CA008D5B93 /* DetailsController.swift */; };
+		3945650324AE9F9E008D5B93 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3945650224AE9F9E008D5B93 /* CustomImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		394564F224AE30E7008D5B93 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		394564F424AE31E1008D5B93 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		394564FA24AE83CA008D5B93 /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
+		3945650224AE9F9E008D5B93 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		394564C924AD2082008D5B93 /* Raye7-IOS-Task */ = {
 			isa = PBXGroup;
 			children = (
+				3945650124AE9F7A008D5B93 /* Utilities */,
 				394564EF24AD33D5008D5B93 /* Networking */,
 				394564E024AD216C008D5B93 /* Model */,
 				394564E324AD2636008D5B93 /* View */,
@@ -157,6 +160,14 @@
 			path = EndPoint;
 			sourceTree = "<group>";
 		};
+		3945650124AE9F7A008D5B93 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3945650224AE9F9E008D5B93 /* CustomImageView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				394564F124AE2E2C008D5B93 /* Result.swift in Sources */,
+				3945650324AE9F9E008D5B93 /* CustomImageView.swift in Sources */,
 				394564CF24AD2082008D5B93 /* HomeController.swift in Sources */,
 				394564EB24AD2695008D5B93 /* HomeCell.swift in Sources */,
 				394564EE24AD2A6E008D5B93 /* Leagues.swift in Sources */,

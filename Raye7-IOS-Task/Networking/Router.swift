@@ -13,7 +13,6 @@ enum Router {
     case getAllLeagues
     case getLeague(idLeague: String)
     
-    
     private static let baseURLString = "https://www.thesportsdb.com/api/v1/json/1/"
     
     private enum HTTPMethod {
@@ -58,7 +57,6 @@ enum Router {
             return request
         case .getLeague:
             return request
-            
         }
     }
 }

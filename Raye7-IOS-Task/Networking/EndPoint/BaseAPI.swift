@@ -50,7 +50,7 @@ class BaseAPI {
                         completion(Result<T>.failure(error: ErrorType.defaultError))
                         return
                     }
-                   
+                    
                     do {
                         ///Decode data...
                         let result = try JSONDecoder().decode(T.self, from: data)
