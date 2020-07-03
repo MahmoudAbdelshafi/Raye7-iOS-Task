@@ -1,12 +1,12 @@
 # SportsLeagues
 
-- SportsLeagues is a simple iOS application built as interview task at Raye7 company.
+* SportsLeagues is a simple iOS application built as interview task at Raye7 company.
 * Built completely using native Swift.
-* Built MVC (Model-View-Controller) and Clean Architecture.
+* Built in MVC (Model-View-Controller) and Clean Architecture.
 
 
 ## OVERVIEW
-- Implement a simple list + details app.
+- Implement a simple list screen + details screen.
 ## SPECIFICATIONS
 ### Home screen with list of leagues contains
 - Leagueas name
