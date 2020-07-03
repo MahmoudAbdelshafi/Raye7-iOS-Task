@@ -5,14 +5,14 @@
 - Implement a simple list + details app.
 ## SPECIFICATIONS
 ### Home screen with list of leagues contains: 
-- StrLeagueasname
-- StrSportassport
-- StrLeagueAlternateasshortname
+- Leagueas name
+- Sports label
+- League Alternateass label
 
 
 ### Simple league details screen contains: 
-- StrLeagueasname
-- StrSportassport
-- StrCountryascountry
-- StrLogoaslogoimage
-- StrDescriptionENasdescription
+- Logo image
+- Leagueas name
+- Sports label
+- Country Label
+- DescriptionEN TextView

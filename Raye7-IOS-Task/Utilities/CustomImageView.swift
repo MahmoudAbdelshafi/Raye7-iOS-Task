@@ -31,7 +31,6 @@ class CustomImageView: UIImageView {
             guard let dataImage = UIImage(data: data!) else {return}
             imageCache[url.absoluteString] = dataImage
             DispatchQueue.main.async {
-                
                 self.image = dataImage
             }
         }.resume()

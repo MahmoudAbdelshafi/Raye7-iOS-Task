@@ -8,7 +8,7 @@
 
 import Foundation
 
-// MARK: - League
+// MARK: - Leagues
 
 struct Leagues: Decodable {
     let leagues: [League]?

@@ -13,14 +13,12 @@ class HomeCell: UITableViewCell {
     //MARK:- Properties
     
     var league:League?{
-        
         didSet{
             leagueLabel.text = league?.strLeague
             sportLabel.text = league?.strSport
             aternateLabel.text = league?.strLeagueAlternate
             }
         }
-    
     
     //MARK:- IBOutlets
     

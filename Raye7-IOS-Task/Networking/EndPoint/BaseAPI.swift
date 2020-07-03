@@ -19,7 +19,7 @@ class BaseAPI {
         config = URLSessionConfiguration.default
         session = URLSession(configuration: config)
     }
-    
+    ///Genaric Network call
     func request<T: Decodable>(router: Router, completion: @escaping (Result<T>) -> ()) {
         do {
             let task = try session.dataTask(with: router.request()) { (data, urlResponse, error) in
