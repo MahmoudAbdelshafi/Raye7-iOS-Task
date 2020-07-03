@@ -20,7 +20,18 @@
 		394564F524AE31E1008D5B93 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564F424AE31E1008D5B93 /* BaseAPI.swift */; };
 		394564FB24AE83CA008D5B93 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394564FA24AE83CA008D5B93 /* DetailsController.swift */; };
 		3945650324AE9F9E008D5B93 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3945650224AE9F9E008D5B93 /* CustomImageView.swift */; };
+		3945650B24AF7872008D5B93 /* Raye7_IOS_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3945650A24AF7872008D5B93 /* Raye7_IOS_TaskTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3945650D24AF7873008D5B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 394564BF24AD2082008D5B93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 394564C624AD2082008D5B93;
+			remoteInfo = "Raye7-IOS-Task";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		394564C724AD2082008D5B93 /* Raye7-IOS-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raye7-IOS-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,10 +49,20 @@
 		394564F424AE31E1008D5B93 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		394564FA24AE83CA008D5B93 /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
 		3945650224AE9F9E008D5B93 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		3945650824AF7872008D5B93 /* Raye7-IOS-TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Raye7-IOS-TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3945650A24AF7872008D5B93 /* Raye7_IOS_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raye7_IOS_TaskTests.swift; sourceTree = "<group>"; };
+		3945650C24AF7873008D5B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		394564C424AD2082008D5B93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3945650524AF7872008D5B93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				394564C924AD2082008D5B93 /* Raye7-IOS-Task */,
+				3945650924AF7872008D5B93 /* Raye7-IOS-TaskTests */,
 				394564C824AD2082008D5B93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				394564C724AD2082008D5B93 /* Raye7-IOS-Task.app */,
+				3945650824AF7872008D5B93 /* Raye7-IOS-TaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +191,15 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		3945650924AF7872008D5B93 /* Raye7-IOS-TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				3945650A24AF7872008D5B93 /* Raye7_IOS_TaskTests.swift */,
+				3945650C24AF7873008D5B93 /* Info.plist */,
+			);
+			path = "Raye7-IOS-TaskTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,6 +220,24 @@
 			productReference = 394564C724AD2082008D5B93 /* Raye7-IOS-Task.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3945650724AF7872008D5B93 /* Raye7-IOS-TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3945650F24AF7873008D5B93 /* Build configuration list for PBXNativeTarget "Raye7-IOS-TaskTests" */;
+			buildPhases = (
+				3945650424AF7872008D5B93 /* Sources */,
+				3945650524AF7872008D5B93 /* Frameworks */,
+				3945650624AF7872008D5B93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3945650E24AF7873008D5B93 /* PBXTargetDependency */,
+			);
+			name = "Raye7-IOS-TaskTests";
+			productName = "Raye7-IOS-TaskTests";
+			productReference = 3945650824AF7872008D5B93 /* Raye7-IOS-TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,6 +250,10 @@
 				TargetAttributes = {
 					394564C624AD2082008D5B93 = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					3945650724AF7872008D5B93 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 394564C624AD2082008D5B93;
 					};
 				};
 			};
@@ -217,6 +271,7 @@
 			projectRoot = "";
 			targets = (
 				394564C624AD2082008D5B93 /* Raye7-IOS-Task */,
+				3945650724AF7872008D5B93 /* Raye7-IOS-TaskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,6 +285,13 @@
 				394564D424AD2088008D5B93 /* Assets.xcassets in Resources */,
 				394564EC24AD2695008D5B93 /* HomeCell.xib in Resources */,
 				394564D224AD2082008D5B93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3945650624AF7872008D5B93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +314,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3945650424AF7872008D5B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3945650B24AF7872008D5B93 /* Raye7_IOS_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3945650E24AF7873008D5B93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 394564C624AD2082008D5B93 /* Raye7-IOS-Task */;
+			targetProxy = 3945650D24AF7873008D5B93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		394564D024AD2082008D5B93 /* Main.storyboard */ = {
@@ -422,6 +500,44 @@
 			};
 			name = Release;
 		};
+		3945651024AF7873008D5B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Raye7-IOS-TaskTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "M.Raye7-IOS-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raye7-IOS-Task.app/Raye7-IOS-Task";
+			};
+			name = Debug;
+		};
+		3945651124AF7873008D5B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Raye7-IOS-TaskTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "M.Raye7-IOS-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raye7-IOS-Task.app/Raye7-IOS-Task";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -439,6 +555,15 @@
 			buildConfigurations = (
 				394564DC24AD2088008D5B93 /* Debug */,
 				394564DD24AD2088008D5B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3945650F24AF7873008D5B93 /* Build configuration list for PBXNativeTarget "Raye7-IOS-TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3945651024AF7873008D5B93 /* Debug */,
+				3945651124AF7873008D5B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
